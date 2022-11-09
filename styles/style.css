@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #c0c865;
+  cursor: url(../images/cursor.png), default;
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg {
+  background-image: url(../images/background.png);
+  width: 120rem;
+  height: 67.5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.worm-container {
+  width: 5%;
+  overflow: hidden;
+  transition: width 0.5s;
+}
+
+.hole-container {
+  width: 25%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hole {
+  background-color: black;
+  border-radius: 50%;
+
+  width: 16.68rem;
+  height: 16.68rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hungry {
+  cursor: url(../images/cursor-worm.png), default;
+}
+
+.hidden {
+  display: none;
+}
